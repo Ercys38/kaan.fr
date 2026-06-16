@@ -1537,3 +1537,23 @@ body.light-mode .skill-card {
   font-weight: 700;
   line-height: 1.4;
 }
+
+.english-description {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent-2);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface-strong) 62%, transparent);
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.english-description strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
