@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projets techniques d'Abdulkaan KUM." />
+    <title>Abdulkaan KUM | Projets</title>
+    <link rel="stylesheet" href="styles.css?v=25" />
+  </head>
+  <body data-page="projets">
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="logo" href="index.html" aria-label="Accueil">AK</a>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-page-link="accueil">Accueil</a>
+          <a href="projets.html" data-page-link="projets">Projets</a>
+          <a href="parcours.html" data-page-link="parcours">Parcours</a>
+          <a href="competences.html" data-page-link="competences">Competences</a>
+          <a href="contact.html" data-page-link="contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span data-theme-label>Mode clair</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-section">
+        <p class="eyebrow">Portfolio technique</p>
+        <h1>Projets</h1>
+        <p>
+          Une selection de projets reseaux, systemes, web et IoT. Chaque popup reprend le
+          format attendu en SAÉ : duree, contexte, realisations, technologies, competences
+          acquises et bilan personnel.
+        </p>
+      </section>
+
+      <section class="page-section">
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Architecture reseau</p>
+              <h2>Deploiement d'architecture reseau (EVE-NG)</h2>
+              <p>Segmentation logique, VLAN, VTP, DHCP et routage inter-VLAN sur emulateur.</p>
+              <div class="tags"><span>EVE-NG</span><span>VLAN</span><span>VTP</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-eve">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.66 5.66l8.24 8.24a2 2 0 0 0 2.83-2.83L14.7 6.3z"></path><path d="M6.34 14.66 3 18l3 3 3.34-3.34"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Maintenance systeme</p>
+              <h2>Outil de maintenance systeme</h2>
+              <p>Reporting disque, interface graphique PyQt5 et generation de scripts de nettoyage.</p>
+              <div class="tags"><span>Python</span><span>PyQt5</span><span>PowerShell</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-maintenance">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14 0"></path><path d="M2 9.2a16 16 0 0 1 20 0"></path><path d="M8.5 16a6 6 0 0 1 7 0"></path><path d="M12 20h.01"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Sans-fil</p>
+              <h2>Etude et optimisation Wi-Fi</h2>
+              <p>Analyse de couverture, comparaison 2,4/5 GHz, heatmaps et deploiement physique.</p>
+              <div class="tags"><span>Wi-Fi</span><span>Cisco</span><span>RJ45</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-wifi">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M3 9h18"></path><path d="M8 5h8"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Web CV</p>
+              <h2>Developpement de site web CV</h2>
+              <p>Creation d'une vitrine personnelle responsive en HTML, CSS et JavaScript.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-cvweb">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Securite reseau</p>
+              <h2>Construire un reseau securise (GNS3)</h2>
+              <p>VLSM, RIP v2, ACL, port-security et services virtualises sous Linux.</p>
+              <div class="tags"><span>GNS3</span><span>VLSM</span><span>ACL</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-gns3">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card is-coming reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 8h.01"></path><path d="M11 8h6"></path><path d="M7 12h.01"></path><path d="M11 12h6"></path></svg>
+              <span class="status-pill">Coming soon</span>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Projet personnel</p>
+              <h2>HomeLab</h2>
+              <p>Infrastructure personnelle en preparation : virtualisation, services reseau, supervision et securite.</p>
+              <div class="tags"><span>Proxmox</span><span>Docker</span><span>pfSense</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-homelab">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle><rect x="14" y="4" width="6" height="8" rx="1"></rect></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">IoT</p>
+              <h2>Web Radio IoT (ESP32)</h2>
+              <p>Radio connectee pilotable a distance via MQTT, avec ESP32 et traitement audio.</p>
+              <div class="tags"><span>ESP32</span><span>MQTT</span><span>C/C++</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-radio">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 3v18"></path><path d="M17 3v18"></path><path d="M3 8h4"></path><path d="M3 13h4"></path><path d="M3 18h4"></path><path d="M17 8h4"></path><path d="M17 13h4"></path><path d="M17 18h4"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Web & BDD</p>
+              <h2>Filmographie (CineScope)</h2>
+              <p>Application web de gestion de films en Django : catalogue, recherche, categories, comptes et administration.</p>
+              <div class="tags"><span>Django</span><span>MySQL</span><span>Linux</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-django">Voir le projet</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="modal-eve" role="dialog" aria-modal="true" aria-labelledby="modal-eve-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"></path></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-eve-title">Deploiement d'architecture reseau d'entreprise</h2>
+            <div class="modal-meta">Dec. 2025 - Janv. 2026 | Individuel | 17.5 h | S1</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Ce projet sert a comprendre les bases d'une infrastructure d'entreprise avant le passage sur du materiel reel : segmentation, adressage, services et routage.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>J'ai construit une topologie virtualisee, defini un plan d'adressage coherent, separe le trafic par VLAN, configure VTP, les serveurs DHCP et le routage inter-VLAN. Le travail inclut aussi des tests de connectivite et du diagnostic lorsque certains flux ne passaient pas.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Captures du projet</h3>
+          <div class="modal-gallery">
+            <figure class="modal-figure">
+              <a href="assets/projets/eveng.png" target="_blank" rel="noopener">
+                <img src="assets/projets/eveng.png" alt="Topologie reseau sous EVE-NG" loading="lazy" />
+              </a>
+              <figcaption>Topologie sous EVE-NG : routeur, switch client, switch serveur, postes (Admin, Direction, Utilisateur) et serveur.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>EVE-NG</span><span>Cisco</span><span>VLAN</span><span>VTP</span><span>DHCP</span><span>Routage inter-VLAN</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC11.02</strong> - Comprendre l'architecture et les fondements des systemes numeriques, des communications et de l'Internet.</li><li><strong>AC11.03</strong> - Configurer les fonctions de base du reseau local.</li><li><strong>AC11.04</strong> - Maitriser les roles des systemes d'exploitation pour administrer reseaux et services.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>Ce projet m'a montre qu'une bonne preparation evite beaucoup d'erreurs. Je retiens surtout l'importance du plan d'adressage et de la documentation, car une petite incoherence sur un VLAN peut bloquer toute une partie du reseau.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-maintenance" role="dialog" aria-modal="true" aria-labelledby="modal-maintenance-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.66 5.66l8.24 8.24a2 2 0 0 0 2.83-2.83L14.7 6.3z"></path><path d="M6.34 14.66 3 18l3 3 3.34-3.34"></path></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-maintenance-title">Outil de maintenance systeme</h2>
+            <div class="modal-meta">Dec. 2025 - Janv. 2026 | Binome | 14 h | S1</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>L'objectif est de creer un outil utile a l'administration systeme : reperer les fichiers volumineux, produire un reporting lisible et preparer un nettoyage cible sans action dangereuse automatique.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>Le backend Python analyse recursivement les dossiers avec pathlib, trie les fichiers selon leur taille et exporte les resultats. L'interface PyQt5 rend les donnees plus lisibles, tandis que PowerShell peut etre utilise pour preparer des actions de nettoyage controlees.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>Python</span><span>PyQt5</span><span>PowerShell</span><span>JSON</span><span>Pathlib</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC13.01</strong> - Utiliser un systeme informatique et ses outils.</li><li><strong>AC13.02</strong> - Lire, executer, corriger et modifier un programme.</li><li><strong>AC13.03</strong> - Traduire un algorithme dans un langage et pour un environnement donne.</li><li><strong>AC13.06</strong> - S'integrer dans un environnement de developpement et de travail collaboratif.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>Ce projet m'a appris a relier un outil graphique a une logique systeme plus technique. Il m'a aussi fait progresser sur la gestion des chemins, la compatibilite Windows et la separation entre analyse et action.</p>
+        </div>
+        <div class="modal-links"><a class="modal-link" href="https://github.com/Ercys38" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-wifi" role="dialog" aria-modal="true" aria-labelledby="modal-wifi-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14 0"></path><path d="M2 9.2a16 16 0 0 1 20 0"></path><path d="M8.5 16a6 6 0 0 1 7 0"></path><path d="M12 20h.01"></path></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-wifi-title">Etude et optimisation Wi-Fi</h2>
+            <div class="modal-meta">Nov. 2025 - Dec. 2025 | Groupe de 4 | 17.5 h | S1</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Le projet consiste a analyser une couverture sans fil et a proposer des ameliorations concretes, en tenant compte des contraintes physiques du batiment et du comportement des bandes 2,4 GHz et 5 GHz.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>Nous avons compare les mesures de debit, de portee et de stabilite, exploite des cartes de chaleur pour localiser les zones faibles, puis relie ces observations aux choix de placement et de cablage RJ45.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Captures du projet</h3>
+          <div class="modal-gallery">
+            <figure class="modal-figure">
+              <a href="assets/projets/wifi-topologie.png" target="_blank" rel="noopener">
+                <img src="assets/projets/wifi-topologie.png" alt="Topologie reseau Packet Tracer du deploiement Wi-Fi" loading="lazy" />
+              </a>
+              <figcaption>Topologie reseau (Packet Tracer) : serveurs Web/DNS, switches, controleur WLC 5500 et borne Wi-Fi (salles C100 / C102).</figcaption>
+            </figure>
+            <figure class="modal-figure">
+              <a href="assets/projets/wifi-heatmap.png" target="_blank" rel="noopener">
+                <img src="assets/projets/wifi-heatmap.png" alt="Carte de chaleur de la couverture Wi-Fi du batiment" loading="lazy" />
+              </a>
+              <figcaption>Carte de chaleur de la couverture (Acrylic WiFi) : du vert (bon signal) au rouge (zone faible).</figcaption>
+            </figure>
+            <figure class="modal-figure">
+              <a href="assets/projets/wifi-debit.png" target="_blank" rel="noopener">
+                <img src="assets/projets/wifi-debit.png" alt="Releve de debit Wi-Fi sous le moniteur de ressources Windows" loading="lazy" />
+              </a>
+              <figcaption>Releve de debit et de signal (Moniteur de ressources Windows) : envoi / reception et caracteristiques de la liaison.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>Wi-Fi Cisco</span><span>2,4 GHz</span><span>5 GHz</span><span>Heatmaps</span><span>Cablage RJ45</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC12.01</strong> - Mesurer, analyser et commenter les signaux.</li><li><strong>AC12.03</strong> - Deployer des supports de transmission.</li><li><strong>AC11.01</strong> - Maitriser les bases physiques utiles aux equipements reseaux et telecommunications.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>J'ai compris qu'un reseau Wi-Fi ne se limite pas a poser une borne. Les obstacles, les interferences, le placement et le cablage ont un impact direct sur la qualite finale du service.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-cvweb" role="dialog" aria-modal="true" aria-labelledby="modal-cvweb-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M3 9h18"></path><path d="M8 5h8"></path></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-cvweb-title">Developpement de site web CV</h2>
+            <div class="modal-meta">2025/2026 | Individuel | 11 h | S1/S2</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>L'objectif est de transformer un CV classique en portfolio web professionnel, lisible sur ordinateur comme sur mobile, et facile a faire evoluer.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>J'ai structure plusieurs pages HTML reliees entre elles, cree une navigation fixe avec mode clair/sombre, organise les sections projet, parcours, competences et contact, puis ajuste le responsive pour garder une lecture propre sur mobile.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive design</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC13.04</strong> - Connaitre l'architecture et les technologies d'un site Web.</li><li><strong>AC13.01</strong> - Utiliser un systeme informatique et ses outils.</li><li><strong>AC13.02</strong> - Lire, executer, corriger et modifier un programme.</li><li><strong>AC13.05</strong> - Choisir des mecanismes de gestion de donnees adaptes au besoin.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>Ce projet m'a fait travailler autant le fond que la forme : un portfolio doit etre technique, mais aussi clair, rapide a parcourir et coherent avec l'image professionnelle que je veux donner.</p>
+        </div>
+        <div class="modal-links"><a class="modal-link" href="https://github.com/Ercys38" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-gns3" role="dialog" aria-modal="true" aria-labelledby="modal-gns3-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-gns3-title">Construire un reseau securise</h2>
+            <div class="modal-meta">2026 | Individuel | 14 h | S2</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Ce projet va plus loin que la simple connectivite : il faut concevoir une topologie coherente, optimiser l'adressage et ajouter des protections pour limiter les flux non autorises.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>Le reseau est simule sous GNS3 avec un plan VLSM, du routage dynamique RIP v2, des VLAN, des services DHCP/FTP/Apache et des regles ACL. La securite est renforcee par le port-security et par une logique de filtrage sur les routeurs.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Captures du projet</h3>
+          <div class="modal-gallery">
+            <figure class="modal-figure">
+              <a href="assets/projets/gns3-topology.png" target="_blank" rel="noopener">
+                <img src="assets/projets/gns3-topology.png" alt="Topologie reseau securisee sous GNS3" loading="lazy" />
+              </a>
+              <figcaption>Topologie sous GNS3 : routeurs R1/R2/R3, commutateurs et VLAN 100 (administration), 200 (developpeur) et 300 (administrateur).</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>GNS3</span><span>VLSM</span><span>RIP v2</span><span>ACL</span><span>Port-security</span><span>Apache</span><span>FTP</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC11.03</strong> - Configurer les fonctions de base et avancees du reseau local.</li><li><strong>AC11.04</strong> - Administrer des systemes et services fournis par le reseau.</li><li><strong>AC13.01</strong> - Utiliser un systeme informatique et ses outils pour configurer, tester et depanner.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>J'ai mieux compris le role de la segmentation et du filtrage. Les ACL obligent a reflechir aux flux utiles avant de configurer, ce qui rapproche le projet d'une vraie logique d'entreprise.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-homelab" role="dialog" aria-modal="true" aria-labelledby="modal-homelab-title">
+      <div class="modal-panel modal-soon">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-soon-overlay" aria-hidden="true">
+          <span class="soon-title">Coming Soon</span>
+          <p class="soon-sub">Projet en cours de preparation</p>
+        </div>
+        <div class="modal-soon-content">
+          <div class="modal-head">
+            <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 8h.01"></path><path d="M11 8h6"></path><path d="M7 12h.01"></path><path d="M11 12h6"></path></svg></div>
+            <div>
+              <h2 class="modal-title" id="modal-homelab-title">HomeLab</h2>
+              <div class="modal-meta">Projet personnel | Coming soon | Heures a completer</div>
+            </div>
+          </div>
+          <div class="modal-section">
+            <h3>Objectif</h3>
+            <p>Mettre en place progressivement un environnement personnel pour pratiquer l'administration systeme, la virtualisation, la supervision et la securisation de services.</p>
+          </div>
+          <div class="modal-section">
+            <h3>Pistes prevues</h3>
+            <div class="modal-realisation-block"><div class="modal-realisation-title">Virtualisation</div><p>Tester des machines virtuelles et organiser les ressources pour simuler plusieurs services.</p></div>
+            <div class="modal-realisation-block"><div class="modal-realisation-title">Reseau</div><p>Segmenter les usages, etudier les VLAN, le pare-feu et les acces distants securises.</p></div>
+            <div class="modal-realisation-block"><div class="modal-realisation-title">Supervision</div><p>Prevoir des tableaux de bord pour surveiller l'etat des services et mieux diagnostiquer les incidents.</p></div>
+          </div>
+          <div class="modal-section">
+            <h3>Technologies visees</h3>
+            <div class="modal-tags"><span>Proxmox</span><span>Docker</span><span>pfSense</span><span>Linux</span><span>Grafana</span><span>Prometheus</span></div>
+          </div>
+          <div class="modal-section">
+            <h3>Competences visees</h3>
+            <div class="modal-bullets"><ul><li>Administrer un environnement virtualise.</li><li>Segmenter un reseau et securiser les acces.</li><li>Superviser des services et diagnostiquer les incidents.</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-radio" role="dialog" aria-modal="true" aria-labelledby="modal-radio-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle><rect x="14" y="4" width="6" height="8" rx="1"></rect></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-radio-title">Web Radio IoT (ESP32)</h2>
+            <div class="modal-meta">2026 | Binome | 19 h | S2</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Le but est de construire une radio connectee capable de lire des flux audio Internet et d'etre controlee depuis une interface mobile.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>Le projet combine un ESP32, un decodeur audio, une connexion Wi-Fi et un controle MQTT. La partie logicielle gere la connexion, les commandes, le volume et l'etat de lecture pour que l'objet reste pilotable a distance.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Captures du projet</h3>
+          <div class="modal-gallery">
+            <figure class="modal-figure">
+              <a href="assets/projets/webradio-mqtt1.png" target="_blank" rel="noopener">
+                <img src="assets/projets/webradio-mqtt1.png" alt="Interface de controle de la Web Radio sur smartphone (IoT MQTT Panel)" loading="lazy" />
+              </a>
+              <figcaption>Interface de controle sur smartphone (IoT MQTT Panel) : choix de station, lecture/stop, volume et reglage des aigus via MQTT.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>ESP32</span><span>C/C++</span><span>Arduino IDE</span><span>MQTT</span><span>Wi-Fi</span><span>IoT MQTT Panel</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC13.02</strong> - Lire, executer, corriger et modifier un programme.</li><li><strong>AC13.03</strong> - Traduire un algorithme dans un langage et pour un environnement donne.</li><li><strong>AC11.01</strong> - Relier les bases physiques et electriques aux equipements reseaux et telecommunications.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>Ce projet est interessant parce qu'il relie plusieurs mondes : electronique, developpement et reseau. Il oblige a tester par etapes et a rester rigoureux dans la gestion des bibliotheques.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-django" role="dialog" aria-modal="true" aria-labelledby="modal-django-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 3v18"></path><path d="M17 3v18"></path><path d="M3 8h4"></path><path d="M3 13h4"></path><path d="M3 18h4"></path><path d="M17 8h4"></path><path d="M17 13h4"></path><path d="M17 18h4"></path></svg></div>
+          <div>
+            <h2 class="modal-title" id="modal-django-title">Filmographie (CineScope)</h2>
+            <div class="modal-meta">SAE 2.03 | Groupe de 3 | 26 h | S2</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Dans le cadre d'une SAE, l'objectif etait de concevoir une application web de gestion de films, CineScope, permettant de parcourir un catalogue, de rechercher un titre, de filtrer par categorie et de gerer le contenu depuis une interface d'administration. Le projet a ete realise en equipe avec une base de donnees relationnelle.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Realisations techniques</h3>
+          <p>L'application repose sur Django et une base de donnees relationnelle, deployee sur une machine virtuelle Linux. Le travail couvre la modelisation des donnees (films, categories, utilisateurs), les vues, les formulaires, l'authentification et la partie HTML/CSS.</p>
+          <div class="modal-bullets"><ul><li>Catalogue de films avec fiche detaillee : titre, realisateur, annee et categorie.</li><li>Recherche par mot-cle et filtrage par categorie.</li><li>Page "Top films" et comptes utilisateurs (connexion / deconnexion).</li><li>Interface d'administration pour ajouter et gerer les films (CRUD).</li><li>Travail collaboratif et gestion de version via GitHub.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Captures du projet</h3>
+          <div class="modal-gallery">
+            <figure class="modal-figure">
+              <a href="assets/projets/cinescope-catalogue.jpg" target="_blank" rel="noopener">
+                <img src="assets/projets/cinescope-catalogue.jpg" alt="Page catalogue de l'application CineScope" loading="lazy" />
+              </a>
+              <figcaption>Page catalogue de CineScope : barre de recherche, filtre par categorie et fiches films.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags"><span>Python</span><span>Django</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>MySQL</span><span>Linux VM</span><span>GitHub</span></div>
+        </div>
+        <div class="modal-section">
+          <h3>Competences acquises</h3>
+          <div class="modal-bullets"><ul><li><strong>AC13.01</strong> - Utiliser un systeme informatique et ses outils.</li><li><strong>AC13.02</strong> - Lire, executer, corriger et modifier un programme.</li><li><strong>AC13.04</strong> - Connaitre l'architecture et les technologies d'un site Web.</li><li><strong>AC13.05</strong> - Choisir les mecanismes de gestion de donnees adaptes au developpement de l'outil.</li><li><strong>AC13.06</strong> - S'integrer dans un environnement propice au developpement et au travail collaboratif.</li></ul></div>
+        </div>
+        <div class="modal-section">
+          <h3>Bilan reflexif personnel</h3>
+          <p>Ce projet m'a montre comment relier une interface web a une base de donnees avec Django, et l'importance d'un schema de donnees clair avant de coder. J'ai aussi progresse sur le travail en equipe avec Git et sur le deploiement d'une application sur un serveur Linux.</p>
+        </div>
+        <div class="modal-links"><a class="modal-link" href="https://github.com/Ercys38" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Abdulkaan KUM</span>
+      <div class="social-links">
+        <a href="assets/Abdulkaan-KUM-CV.pdf">CV</a>
+        <a href="https://github.com/Ercys38" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdulkaan-kum-1b0641349/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=21"></script>
+  </body>
+</html>
