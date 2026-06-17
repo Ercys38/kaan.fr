@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projets techniques d'Abdulkaan KUM." />
     <title>Abdulkaan KUM | Projets</title>
-    <link rel="stylesheet" href="styles.css?v=43" />
+    <link rel="stylesheet" href="styles.css?v=42" />
   </head>
   <body data-page="projets">
     <header class="site-header" data-header>
@@ -37,7 +37,26 @@
       </section>
 
       <section class="page-section">
+        <div class="section-header">
+          <span>01</span>
+          <h2>Projets réalisés en cours</h2>
+          <div></div>
+        </div>
+
         <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M3 9h18"></path><path d="M8 5h8"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Web CV</p>
+              <h2>Developpement de site web CV</h2>
+              <p>Creation d'une vitrine personnelle responsive en HTML, CSS et JavaScript.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-cvweb">Voir le projet</button>
+            </div>
+          </article>
+
           <article class="project-card reveal">
             <div class="project-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"></path></svg>
@@ -48,19 +67,6 @@
               <p>Segmentation logique, VLAN, VTP, DHCP et routage inter-VLAN sur emulateur.</p>
               <div class="tags"><span>EVE-NG</span><span>VLAN</span><span>VTP</span></div>
               <button class="text-link" type="button" data-modal-open="modal-eve">Voir le projet</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.66 5.66l8.24 8.24a2 2 0 0 0 2.83-2.83L14.7 6.3z"></path><path d="M6.34 14.66 3 18l3 3 3.34-3.34"></path></svg>
-            </div>
-            <div class="project-content">
-              <p class="project-kicker">Maintenance systeme</p>
-              <h2>Outil de maintenance systeme</h2>
-              <p>Reporting disque, interface graphique PyQt5 et generation de scripts de nettoyage.</p>
-              <div class="tags"><span>Python</span><span>PyQt5</span><span>PowerShell</span></div>
-              <button class="text-link" type="button" data-modal-open="modal-maintenance">Voir le projet</button>
             </div>
           </article>
 
@@ -79,14 +85,14 @@
 
           <article class="project-card reveal">
             <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M3 9h18"></path><path d="M8 5h8"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.66 5.66l8.24 8.24a2 2 0 0 0 2.83-2.83L14.7 6.3z"></path><path d="M6.34 14.66 3 18l3 3 3.34-3.34"></path></svg>
             </div>
             <div class="project-content">
-              <p class="project-kicker">Web CV</p>
-              <h2>Developpement de site web CV</h2>
-              <p>Creation d'une vitrine personnelle responsive en HTML, CSS et JavaScript.</p>
-              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div>
-              <button class="text-link" type="button" data-modal-open="modal-cvweb">Voir le projet</button>
+              <p class="project-kicker">Maintenance systeme</p>
+              <h2>Outil de maintenance systeme</h2>
+              <p>Reporting disque, interface graphique PyQt5 et generation de scripts de nettoyage.</p>
+              <div class="tags"><span>Python</span><span>PyQt5</span><span>PowerShell</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-maintenance">Voir le projet</button>
             </div>
           </article>
 
@@ -100,20 +106,6 @@
               <p>VLSM, RIP v2, ACL, port-security et services virtualises sous Linux.</p>
               <div class="tags"><span>GNS3</span><span>VLSM</span><span>ACL</span></div>
               <button class="text-link" type="button" data-modal-open="modal-gns3">Voir le projet</button>
-            </div>
-          </article>
-
-          <article class="project-card is-coming reveal">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 8h.01"></path><path d="M11 8h6"></path><path d="M7 12h.01"></path><path d="M11 12h6"></path></svg>
-              <span class="status-pill">Coming soon</span>
-            </div>
-            <div class="project-content">
-              <p class="project-kicker">Projet personnel</p>
-              <h2>HomeLab</h2>
-              <p>Infrastructure personnelle en preparation : virtualisation, services reseau, supervision et securite.</p>
-              <div class="tags"><span>Proxmox</span><span>Docker</span><span>pfSense</span></div>
-              <button class="text-link" type="button" data-modal-open="modal-homelab">Voir le projet</button>
             </div>
           </article>
 
@@ -153,6 +145,30 @@
               <p>Projet complet mêlant réseau, collecte de données, application web et base de données pour superviser des capteurs de température.</p>
               <div class="tags"><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span></div>
               <button class="text-link" type="button" data-modal-open="modal-sae204">Voir le projet</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-header">
+          <span>02</span>
+          <h2>Projets personnels</h2>
+          <div></div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card is-coming reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 8h.01"></path><path d="M11 8h6"></path><path d="M7 12h.01"></path><path d="M11 12h6"></path></svg>
+              <span class="status-pill">Coming soon</span>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Projet personnel</p>
+              <h2>HomeLab</h2>
+              <p>Infrastructure personnelle en preparation : virtualisation, services reseau, supervision et securite.</p>
+              <div class="tags"><span>Proxmox</span><span>Docker</span><span>pfSense</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-homelab">Voir le projet</button>
             </div>
           </article>
         </div>
