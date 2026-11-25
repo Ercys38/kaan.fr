@@ -46,6 +46,30 @@
 
           <details class="projects-year-dropdown" open>
             <summary>
+              <span>BUT2</span>
+              <strong>Projets BUT2</strong>
+            </summary>
+
+            <div class="project-grid">
+
+              <article class="project-card reveal">
+                <div class="project-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="20" rx="2"></rect><circle cx="12" cy="7" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="17" r="1.5"></circle><path d="M5 7h3"></path><path d="M16 7h3"></path></svg>
+                </div>
+                <div class="project-content">
+                  <p class="project-kicker">SAÉ 3.02</p>
+                  <h2>Carrefour connecté (Avenue de Bâle)</h2>
+                  <p>Simulateur de trafic qui donne la priorité aux véhicules de secours : onde verte, alerte des voitures proches et mesure du temps gagné.</p>
+                  <div class="tags"><span>Python</span><span>Threads</span><span>TCP/JSON</span><span>SQLite</span></div>
+                  <button class="text-link" type="button" data-modal-open="modal-carrefour">Voir le projet</button>
+                </div>
+              </article>
+
+            </div>
+          </details>
+
+          <details class="projects-year-dropdown" open>
+            <summary>
               <span>BUT1</span>
               <strong>Projets BUT1</strong>
             </summary>
@@ -703,6 +727,121 @@
             et la gestion des données dans une application web.
           </p>
         </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-carrefour" role="dialog" aria-modal="true" aria-labelledby="modal-carrefour-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="20" rx="2"></rect><circle cx="12" cy="7" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="17" r="1.5"></circle><path d="M5 7h3"></path><path d="M16 7h3"></path></svg>
+          </div>
+          <div>
+            <h2 class="modal-title" id="modal-carrefour-title">Carrefour connecté : priorité aux véhicules de secours</h2>
+            <div class="modal-meta">SAÉ 3.02 | Binôme | Sept. - Nov. 2026 | S3</div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>
+            Quand la circulation est dense, les véhicules d'urgence perdent du temps aux carrefours :
+            les voitures arrêtées au feu n'ont pas la place de se ranger, et franchir un feu rouge
+            reste dangereux. Le client, M. Frédéric Drouhin, voulait à la fois gagner du temps sur
+            le trajet et éviter les accidents.
+          </p>
+          <p>
+            Nous avons développé une maquette qui simule le dispositif sur l'avenue de Bâle et
+            qui compare le temps de trajet d'un véhicule de secours avec et sans ce dispositif.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Mon travail personnel</h3>
+          <p>
+            Je me suis occupé de l'interface tkinter, de l'affichage du plan de la ville, du panneau
+            de contrôle et du trafic civil. J'ai programmé la conduite autonome des voitures : respect
+            des feux, des stops, des cédez-le-passage et de la priorité à droite, puis rangement
+            progressif sur la droite à l'approche d'un véhicule de secours.
+          </p>
+          <p>
+            Mon binôme a pris en charge la modélisation de la ville, les itinéraires, le superviseur,
+            les threads et la base de données. Le format des messages, les tests et la documentation
+            ont été faits à deux.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Fonctionnalités réalisées</h3>
+          <div class="modal-bullets">
+            <ul>
+              <li>Ville modélisée en graphe : avenue de 1,1 km, six rues, cinq carrefours à feux et un rond-point.</li>
+              <li>Jusqu'à 130 voitures autonomes sur deux files par sens.</li>
+              <li>Onde verte : les feux passent au vert devant le véhicule de secours puis reprennent leur cycle.</li>
+              <li>Alerte des véhicules à moins de 500 m, avec la direction du véhicule de secours.</li>
+              <li>Itinéraire calculé avec l'algorithme de Dijkstra jusqu'au lieu d'intervention.</li>
+              <li>Trois threads (affichage, moteur, superviseur) qui échangent des messages JSON.</li>
+              <li>Superviseur installable sur une autre VM, joint par socket TCP et trouvé automatiquement par diffusion UDP.</li>
+              <li>Chaque intervention est chronométrée et enregistrée dans une base SQLite.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Résultats mesurés</h3>
+          <p>
+            Traversée de l'avenue d'ouest en est (1,1 km, 6 carrefours), moyenne sur 8 trajets.
+            Sans dispositif, le temps augmente avec les embouteillages. Avec le dispositif, il reste
+            presque stable quelle que soit la densité.
+          </p>
+          <div class="modal-realisation-block"><div class="modal-realisation-title">Densité 20 % : 33 % de gain</div><p>106,0 s sans dispositif, 70,9 s avec.</p></div>
+          <div class="modal-realisation-block"><div class="modal-realisation-title">Densité 60 % : 57 % de gain</div><p>164,6 s sans dispositif, 70,4 s avec.</p></div>
+          <div class="modal-realisation-block"><div class="modal-realisation-title">Densité 100 % : 59 % de gain</div><p>204,5 s sans dispositif, 84,5 s avec.</p></div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags">
+            <span>Python 3</span><span>tkinter</span><span>Threads</span><span>Sockets TCP</span><span>UDP</span><span>JSON</span><span>SQLite</span><span>Dijkstra</span><span>VirtualBox</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Compétences acquises</h3>
+          <div class="modal-bullets">
+            <ul>
+              <li><strong>AC23.02</strong> - Développer une application à partir d'un cahier des charges donné.</li>
+              <li><strong>AC23.03</strong> - Utiliser un protocole réseau pour programmer une application client/serveur.</li>
+              <li><strong>AC23.05</strong> - Accéder à un ensemble de données depuis une application.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>English summary</h3>
+          <p lang="en">
+            This project is a connected intersection simulator that gives priority to emergency vehicles.
+            Traffic lights turn green ahead of the vehicle and nearby cars are warned so they can move aside.
+            My personal work focused on the tkinter interface, the city map, the control panel and the
+            autonomous driving of civilian cars. Measurements show a travel time reduction of 33 % to 59 %
+            depending on traffic density.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Bilan réflexif personnel</h3>
+          <p>
+            Ce projet m'a appris à séparer l'affichage de la logique du trafic et à faire travailler
+            plusieurs threads sur un même état sans conflit. La conduite autonome m'a demandé de penser
+            à beaucoup de cas : une voiture ne doit pas se ranger de la même façon si elle est en ligne
+            droite ou si elle doit d'abord dégager un carrefour. Mesurer le temps avec et sans dispositif
+            a aussi permis de prouver l'intérêt du projet avec des chiffres.
+          </p>
+        </div>
+
+        <div class="modal-links"><a class="modal-link" href="https://github.com/Ercys38/SAE3.02" target="_blank" rel="noopener">GitHub</a></div>
       </div>
     </div>
 
